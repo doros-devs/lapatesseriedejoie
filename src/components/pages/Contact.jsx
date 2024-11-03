@@ -15,7 +15,7 @@ const Contact = () => {
         Time of delivery | Mobile number of contact person | Payment
         confirmation message
       </p>
-      <div className="flex flex-wrap mt-20">
+      <div className="flex flex-col lg:flex-row flex-wrap mt-20 gap-8">
         <div className="flex-1">
           <img
             src="/images/contact-image.jpg"
@@ -23,8 +23,8 @@ const Contact = () => {
             className="w-full h-full object-cover rounded-lg shadow-md"
           />
         </div>
-        <div className="text-lg mb-8 flex-1 ml-8 mx-auto text-center">
-          <h2 className="font-bold mb-2">Get In Touch</h2>
+        <div className="text-lg mb-8 flex-1 mx-auto lg:text-center">
+          <h2 className="font-bold mb-4 text-center">Get In Touch</h2>
           <p>
             Email:{" "}
             <a
