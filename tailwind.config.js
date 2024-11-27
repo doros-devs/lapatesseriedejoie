@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -14,7 +15,7 @@ module.exports = {
         'light-rose': '#D98B99',
         'soft-red': '#D98F8F',
         'dusty-rose': '#D9B8B8',
-        'light-gray': '#F2F2F2',
+        'light-gray': '#686D76',
       },
     },
   },
