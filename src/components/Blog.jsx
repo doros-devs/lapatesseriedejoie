@@ -1,5 +1,3 @@
-import React from "react";
-
 const Blog = () => {
   return (
     <div className="container mx-auto p-4">
@@ -10,8 +8,8 @@ const Blog = () => {
           alt="Pastry Art"
           className="w-full rounded-lg shadow-md mb-4"
         />
-        <h2 className="text-3xl font-semibold mb-4">Pastry is Her Canvas</h2>
-        <p className="text-lg">
+        <h2 className="text-3xl font-semibold mb-4 text-soft-red">Pastry is Her Canvas</h2>
+        <p className="text-lg text-light-gray">
           Pastry is her canvas, creating art from the lemons of life, painting
           experiences with a piping bag and whipping cream, capturing moments
           through her lens. Her ingredients include a teaspoon of music, a dash
@@ -27,16 +25,16 @@ const Blog = () => {
           className="w-full rounded-lg shadow-md mb-4"
         />
         <h2 className="text-3xl font-semibold mb-4">Moving to a New Home</h2>
-        <p className="text-lg">
+        <p className="text-lg text-light-gray">
           My husband and I recently moved into our new home. Who knew that
-          moving could be so stressful? It's been a couple of days, and I still
-          feel like we haven't accomplished much, though the truth is the house
+          moving could be so stressful? It&apos;s been a couple of days, and I still
+          feel like we haven&apos;t accomplished much, though the truth is the house
           is coming together nicely. Since the house has a built-in oven, and we
           got some new equipment, I decided to try them out. Working with a new
           oven can be a nightmare. Depending on how it was made, the heat levels
           vary, making a bulletproof recipe a disaster.
         </p>
-        <p className="text-lg mt-4">
+        <p className="text-lg mt-4 text-light-gray">
           This is exactly what happened to me. I baked a vanilla orange sponge
           cake and set it at the temperature I always used, 180 degrees, though
           these new ovens come with so many different settings. I put the
@@ -45,7 +43,7 @@ const Blog = () => {
           top of the cakes. My hubby was devouring the cakes, giving me praises,
           but I knew that this was not the quality of cake I usually make.
         </p>
-        <p className="text-lg mt-4">
+        <p className="text-lg mt-4 text-light-gray">
           So I decided to make a trifle. A trifle is a cake that is assembled in
           a vessel (usually glass) that is filled with cream, fruits, nuts, and
           any other element of your choice. We had bananas and granola, which I

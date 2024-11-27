@@ -1,5 +1,3 @@
-import React from "react";
-
 const About = () => {
   return (
     <div className="container mx-auto p-4">
@@ -17,8 +15,8 @@ const About = () => {
             La patisserie de joie is a French term meaning pastry shop of joy.
             It is a home-based bakery that specializes in hand-painted cream
             cakes and confections with a taste of heaven on earth. Stacey A.M.
-            Ouma is the founder and pastry chef with a bachelor's degree in
-            hotel and restaurant management and an associate's degree in baking
+            Ouma is the founder and pastry chef with a bachelor&apos;s degree in
+            hotel and restaurant management and an associate&apos;s degree in baking
             and pastry management.
           </p>
           <p className="text-lg mt-4">

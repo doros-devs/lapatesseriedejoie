@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { cartItems } = useCart();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -21,13 +23,18 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <div className="md:hidden" onClick={toggleMenu}>
+        <button 
+          className="md:hidden"
+          onClick={toggleMenu}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          type="button"
+        >
           {isOpen ? (
             <FaTimes className="text-2xl cursor-pointer" />
           ) : (
             <FaBars className="text-2xl cursor-pointer" />
           )}
-        </div>
+        </button>
         <ul
           className={`${
             isOpen ? "block" : "hidden"
@@ -54,8 +61,23 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="md:ml-0 ml-4">
+            <Link to="/shop" className="hover:text-gray-500">
+              Shop
+            </Link>
+          </li>
+          <li className="md:ml-0 ml-4">
             <Link to="/contact" className="hover:text-gray-500">
               Contact
+            </Link>
+          </li>
+          <li className="md:ml-0 ml-4">
+            <Link to="/cart" className="hover:text-gray-500 relative">
+              Cart
+              {cartItems.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-light-rose text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                  {cartItems.length}
+                </span>
+              )}
             </Link>
           </li>
         </ul>
